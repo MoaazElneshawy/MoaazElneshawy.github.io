@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moaazelneshawy.github.io/quran-meanings/sitemap.xml

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+  TEMPLATE for a new app's privacy policy.
+  1. Copy this folder to apps/<app-slug>/ and rename as needed.
+  2. Replace every {{PLACEHOLDER}}.
+  3. Delete the sections that don't apply (ads, analytics, location, account).
+  4. Add a card for the app in /index.html under "My apps".
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — {{APP_NAME}}</title>
+  <meta name="description" content="Privacy policy for the {{APP_NAME}} app by Moaaz Elneshawy.">
+  <link rel="canonical" href="https://moaazelneshawy.github.io/apps/{{APP_SLUG}}/privacy.html">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../"><span class="brand-mark" aria-hidden="true">M</span> Moaaz Elneshawy</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="../../#apps">Apps</a>
+      <a href="./">{{APP_NAME}}</a>
+      <a href="privacy.html" aria-current="page">Privacy policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <h1>Privacy policy — {{APP_NAME}}</h1>
+    <p class="meta">Effective {{DATE}} · Applies to the {{APP_NAME}} app for {{PLATFORMS}}, published by Moaaz Elneshawy</p>
+
+    <p class="measure">{{ONE_PARAGRAPH_WHAT_THE_APP_IS_AND_THE_SHORT_PRIVACY_STORY}}</p>
+
+    <div class="summary">
+      <ul>
+        <li>{{Does it need an account? e.g. "No accounts, no registration."}}</li>
+        <li>{{Where is user data stored? e.g. "Everything you enter stays on your device."}}</li>
+        <li>{{Ads? e.g. "Shows ads from Google AdMob." or "No ads."}}</li>
+        <li>{{Analytics / crash reporting? e.g. "Uses Firebase Crashlytics to fix crashes." or "None."}}</li>
+        <li>I don’t sell your data and I don’t share it with anyone for marketing.</li>
+      </ul>
+    </div>
+
+    <h2>Data stored on your device</h2>
+    <p class="measure">{{List what the app saves locally (settings, entries, cache). Mention Android/iCloud backups and that uninstalling removes it.}}</p>
+
+    <!-- Delete this section if the app has no analytics or crash reporting -->
+    <h2>Analytics and crash reports</h2>
+    <p class="measure">{{Which service (Firebase Analytics / Crashlytics), what is sent (screens opened, device model, OS version, app version, installation ID, stack traces), and that it is used only to improve the app.}} These reports go to Google LLC under the <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>.</p>
+
+    <!-- Delete this section if the app has no ads -->
+    <h2>Ads</h2>
+    <p class="measure">{{Which network, what it collects (advertising ID, IP, coarse location, device info), link to its policy, and how to opt out of personalisation. Mention the EEA/UK consent form if you use Google UMP.}}</p>
+
+    <!-- Delete this section if the app never uses location -->
+    <h2>Location</h2>
+    <p class="measure">{{When location is requested, how precise, which service receives it, and that it is never stored on your servers.}}</p>
+
+    <!-- Delete this section if there are no accounts -->
+    <h2>Account and personal data</h2>
+    <p class="measure">{{What you collect at sign-up, why, where it is stored, and how a user deletes their account.}}</p>
+
+    <h2>Children</h2>
+    <p class="measure">{{State whether the app is for all ages or 13+, and that you do not knowingly collect personal data from children.}}</p>
+
+    <h2>Your choices and data deletion</h2>
+    <ul>
+      <li>{{How to opt out of each data flow above.}}</li>
+      <li>To request deletion of any data linked to your installation, email the address below.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p class="measure">Material changes will be posted on this page with an updated effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions: <a href="mailto:m.elneshawy@gmail.com">m.elneshawy@gmail.com</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Moaaz Elneshawy</span>
+    <span><a href="../../">Home</a> · <a href="./">{{APP_NAME}}</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
