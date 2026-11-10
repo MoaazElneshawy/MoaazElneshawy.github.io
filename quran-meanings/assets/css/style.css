@@ -193,7 +193,7 @@ a:hover { color: var(--gold); }
   .hero-phone { justify-self: center; }
 }
 
-/* ---------- phone frame + recreated app screens ---------- */
+/* ---------- device frames around real app screenshots ---------- */
 
 .phone {
   width: 290px;
@@ -209,154 +209,28 @@ a:hover { color: var(--gold); }
   background: var(--bg);
   border: 1px solid var(--border);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 560px;
-  direction: rtl;
 }
-[data-dir="ltr"] { direction: ltr; }
-.app-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  padding: 0.9rem 1rem 0.6rem;
-  color: var(--gold-light);
-  font-weight: 700;
-  font-size: 0.95rem;
-  border-bottom: 1px solid var(--border);
-}
-.app-body { flex: 1; padding: 0.8rem; overflow: hidden; display: flex; flex-direction: column; gap: 0.6rem; }
+.phone-screen img { display: block; width: 100%; height: auto; }
 
-/* reading screen */
-.reading-text {
-  font-size: 1.06rem;
-  line-height: 2.4;
-  text-align: justify;
-  padding: 0.4rem 0.3rem;
+/* wide-screen section: tablet captures side by side, stacked on narrow viewports */
+.tablet-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 1.5rem;
 }
-.basmala { text-align: center; font-size: 1.02rem; margin-bottom: 0.4rem; }
-
-/* surah list rows — mirror app surah cards */
-.surah-row {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 0.55rem 0.7rem;
-}
-.ayah-badge {
-  width: 34px;
-  height: 34px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: var(--bg-badge);
-  border: 1px solid var(--border-gold);
-  color: var(--gold-light);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-.surah-row .s-name { font-weight: 700; font-size: 0.92rem; color: var(--text); }
-.surah-row .s-meta { font-size: 0.72rem; color: var(--muted); }
-
-/* meanings screen */
-.tab-pill {
-  display: flex;
-  background: var(--bg-badge);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 3px;
-  font-size: 0.78rem;
-}
-.tab-pill span {
-  flex: 1;
-  text-align: center;
-  padding: 0.3rem 0.4rem;
-  border-radius: 999px;
-  color: var(--muted);
-}
-.tab-pill .active { background: var(--gold); color: #1a1d27; font-weight: 700; }
-.meaning-ayah {
+.tablet-shots figure { margin: 0; }
+.tablet {
+  border-radius: 26px;
   background: var(--bg-surface);
   border: 1px solid var(--border-gold);
-  border-radius: 14px;
-  padding: 0.6rem 0.7rem;
-  font-size: 0.95rem;
-  line-height: 2;
+  box-shadow: 0 24px 60px var(--shadow);
+  padding: 10px;
 }
-.word-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.6rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 0.45rem 0.7rem;
-  font-size: 0.82rem;
+.tablet img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.features-grid.adaptive-points {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 2rem;
 }
-.word-row .w { color: var(--gold-light); font-weight: 700; }
-.word-row .m { color: var(--muted); text-align: start; }
-
-/* prayer times screen */
-.next-prayer {
-  background: linear-gradient(135deg, var(--bg-badge), var(--bg-surface));
-  border: 1px solid var(--border-gold);
-  border-radius: 16px;
-  padding: 0.8rem;
-  text-align: center;
-}
-.next-prayer .np-label { font-size: 0.72rem; color: var(--muted); }
-.next-prayer .np-name { font-size: 1.15rem; font-weight: 700; color: var(--gold-light); }
-.next-prayer .np-time { font-size: 1.5rem; font-weight: 700; color: var(--text); }
-.prayer-row {
-  display: flex;
-  justify-content: space-between;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 0.42rem 0.8rem;
-  font-size: 0.85rem;
-}
-.prayer-row .p-time { color: var(--gold-light); font-weight: 700; }
-
-/* azkar screen */
-.zikr-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 0.55rem 0.7rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-size: 0.88rem;
-  font-weight: 700;
-}
-.zikr-card small { display: block; font-weight: 400; font-size: 0.72rem; color: var(--muted); }
-
-/* bottom nav — mirrors app QuranNavigationBar */
-.app-bottomnav {
-  display: flex;
-  border-top: 1px solid var(--border);
-  background: var(--bg-surface);
-  padding: 0.45rem 0.2rem 0.7rem;
-}
-.app-bottomnav span {
-  flex: 1;
-  text-align: center;
-  font-size: 0.6rem;
-  color: var(--muted);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-.app-bottomnav svg { width: 18px; height: 18px; }
-.app-bottomnav .active { color: var(--gold-light); }
 
 /* ---------- sections ---------- */
 
@@ -403,7 +277,6 @@ section { padding: 3.5rem 0; }
   scroll-snap-type: x mandatory;
 }
 .screens-strip .phone { scroll-snap-align: center; }
-.screens-strip .phone .phone-screen { height: 520px; }
 .screen-caption {
   text-align: center;
   color: var(--muted);
