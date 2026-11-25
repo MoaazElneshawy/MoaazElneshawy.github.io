@@ -35,7 +35,7 @@
 
 <main class="doc">
 <h1 id="privacy-policy">Privacy Policy</h1>
-<p class="doc-date">Effective date: 10 November 2026 — applies to the "Quran Meanings" (معاني القرآن) app on Android and iOS.</p>
+<p class="doc-date">Effective date: 25 November 2026 — applies to the "Quran Meanings" (القرآن ومعانيه) app on Android and iOS.</p>
 
 <p>Your privacy matters. The app needs no account, shows no ads, and does not collect your name, email address, or phone number. This page explains plainly the little data that is collected, why, where it goes, and how you can control it.</p>
 <h2 id="in-short">In short</h2>
@@ -43,7 +43,7 @@
 <li>No accounts and no sign-in; we collect no identifying data about you.</li>
 <li>No ads, no ad networks, and we do not collect the device advertising ID.</li>
 <li>We never sell your data or share it for marketing.</li>
-<li>We use Google's Firebase for usage statistics and crash reports, solely to improve the app and fix its bugs.</li>
+<li>We use Google's Firebase for usage statistics and crash reports, solely to improve the app and fix its bugs, and to send occasional general notifications (for example, when a new version is released).</li>
 <li>Your approximate location is used only to fetch prayer times, and only if you choose that yourself.</li>
 <li>The app's content (the Quran, tafsir, word meanings, and azkar) is bundled inside the app and works offline.</li>
 </ul>
@@ -51,12 +51,14 @@
 <p>To understand how the app is used and which parts need improvement, the app sends the following to Google's Firebase Analytics service:</p>
 <ul>
 <li>Which screens are opened and general in-app events (for example, opening the surah list or the Settings screen). Ayah text, search queries, and bookmark contents are never sent.</li>
-<li>Device model, operating-system version, and app version.</li>
+<li>Device model, operating-system version, app version, and the app language you chose (Arabic or English).</li>
 <li>Country-level region, which Google's servers infer from the IP address at the time of sending.</li>
 <li>The Firebase installation ID: a random identifier for this installation only. It is not linked to your name or any account and changes when you reinstall the app.</li>
 </ul>
 <h2 id="crash-reports-firebase-crashlytics">Crash reports (Firebase Crashlytics)</h2>
 <p>If the app crashes or hits an unexpected error, Crashlytics sends a report containing the crash log and stack trace, the device state at the moment of the crash (model, OS version, available memory, screen orientation, and connectivity), the app version, and the Firebase installation ID. These reports are used only to diagnose and fix bugs.</p>
+<h2 id="general-notifications-firebase-cloud-messaging">General notifications (Firebase Cloud Messaging)</h2>
+<p>We may occasionally send a general notification to all users, for example when a new version of the app is released. These notifications are the same for everyone and are not based on what you do in the app. To deliver them, Firebase Cloud Messaging gives this installation a random notification token, which Google's push service (and, on iOS, Apple's) uses to route the message to your device. The token is not linked to your name or any account. We use the app language and app version listed above only to send each notification in your app language, or to skip those who already have the latest version. A notification is shown only if you have allowed notifications for the app.</p>
 <h2 id="who-receives-this-data-and-how-long-it-is-kept">Who receives this data and how long it is kept</h2>
 <p>Analytics and crash data are sent to Google LLC through the Firebase service, which processes them on our behalf as a data processor under the <a href="https://firebase.google.com/support/privacy">Firebase privacy and security terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Data is encrypted in transit.</p>
 <ul>
@@ -87,6 +89,7 @@
 <h2 id="your-choices">Your choices</h2>
 <ul>
 <li>To stop usage statistics and crash reports: uninstall the app. There is currently no in-app switch to turn them off.</li>
+<li>To stop general notifications: turn off notifications for the app in your device settings (on Android you can turn off just the "Public Notifications" category).</li>
 <li>To stop location use: revoke the location permission in your device settings, or pick a city manually.</li>
 <li>To stop backup: disable it for the app in Android or iCloud settings.</li>
 <li>To request deletion of the data associated with your installation in Firebase: email us at the address below.</li>
