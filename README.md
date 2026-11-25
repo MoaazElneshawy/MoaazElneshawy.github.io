@@ -9,7 +9,7 @@ resume, independent apps, and their privacy policies.
 
 | App | Page | Privacy policy |
 |-----|------|----------------|
-| Quran Meanings (معاني القرآن) | [/apps/quran-meanings/](https://moaazelneshawy.github.io/apps/quran-meanings/) · [app site](https://moaazelneshawy.github.io/quran-meanings/) | [Arabic](https://moaazelneshawy.github.io/quran-meanings/privacy.html) · [English](https://moaazelneshawy.github.io/quran-meanings/en/privacy.html) |
+| Quran Meanings (القرآن ومعانيه) | [/apps/quran-meanings/](https://moaazelneshawy.github.io/apps/quran-meanings/) · [app site](https://moaazelneshawy.github.io/quran-meanings/) | [Arabic](https://moaazelneshawy.github.io/quran-meanings/privacy.html) · [English](https://moaazelneshawy.github.io/quran-meanings/en/privacy.html) |
 | MathRace | [/apps/mathrace/](https://moaazelneshawy.github.io/apps/mathrace/) | [English](https://moaazelneshawy.github.io/apps/mathrace/privacy.html) |
 
 Plain HTML and CSS, no build step. © Moaaz Elneshawy
